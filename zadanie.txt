@@ -1,0 +1,7 @@
+5. Wypożyczalnia gier planszowych (Naliczanie kar)
+Baza danych: Gra (tytuł, kategoria rzadkości), Wypożyczenie (data zwrotu, status).
+Webowe UI: Widok wypożyczonych aktualnie gier przez użytkownika z informacją o ewentualnych karach.
+Algorytm: Naliczanie opłat za opóźnienie. Kwota zależy od liczby dni po terminie i kategorii gry (np. "Biały kruk" = 10 zł/dzień, "Zwykła" = 2 zł/dzień).
+REST + Swagger: Endpoint GET zwracający aktualne zadłużenie użytkownika.
+Security: Klient widzi swój panel zadłużenia, Pracownik ma możliwość "zwrotu" gry w systemie.
+Test: Testy jednostkowe kalkulatora kar na podstawie różnych dat i kategorii gier.
